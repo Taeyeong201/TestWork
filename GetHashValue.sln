@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Project1.vcxproj", "{9CA20B48-86E2-463C-93F9-381617B05ACD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetHashValue", "GetHashValue\GetHashValue.vcxproj", "{9CA20B48-86E2-463C-93F9-381617B05ACD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
