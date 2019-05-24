@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetHashValue", "GetHashValu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Timer", "Timer\Timer.vcxproj", "{D9AB9095-20BD-41CC-8E43-DE0E04A3102B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEncryption", "FileEncryption\FileEncryption.vcxproj", "{8346440D-D157-4271-BBF7-F25D4ED9E6F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{D9AB9095-20BD-41CC-8E43-DE0E04A3102B}.Release|x64.Build.0 = Release|x64
 		{D9AB9095-20BD-41CC-8E43-DE0E04A3102B}.Release|x86.ActiveCfg = Release|Win32
 		{D9AB9095-20BD-41CC-8E43-DE0E04A3102B}.Release|x86.Build.0 = Release|Win32
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Debug|x64.ActiveCfg = Debug|x64
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Debug|x64.Build.0 = Debug|x64
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Debug|x86.ActiveCfg = Debug|Win32
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Debug|x86.Build.0 = Debug|Win32
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Release|x64.ActiveCfg = Release|x64
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Release|x64.Build.0 = Release|x64
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Release|x86.ActiveCfg = Release|Win32
+		{8346440D-D157-4271-BBF7-F25D4ED9E6F2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,6 +15,7 @@ int main() {
 		Sleep(2000);
 		QueryPerformanceCounter(&Endtime);
 		elapsed = Endtime.QuadPart - BeginTime.QuadPart;
+		printf("%f \n", elapsed);
 		float duringtime = elapsed / Frequency.QuadPart;
 		printf("%f \n", duringtime);
 	}
