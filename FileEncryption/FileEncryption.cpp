@@ -3,11 +3,11 @@
 #include <openssl/aes.h>
 
 static const unsigned char key32[32] =
-{ 
+{
 0x12,0x34,0x56,0x78,0x9a,0xbc,0xde,0xf0,
 0x34,0x56,0x78,0x9a,0xbc,0xde,0xf0,0x12,
 0x56,0x78,0x9a,0xbc,0xde,0xf0,0x12,0x34,
-0x78,0x9a,0xbc,0xde,0xf0,0x12,0x34,0x56 
+0x78,0x9a,0xbc,0xde,0xf0,0x12,0x34,0x56
 };
 
 #define BLOCK_SIZE 16
@@ -122,15 +122,19 @@ int fs_decrypt_aes(char *in_file, char *out_file)
 
 int main(int argc, char *args[])
 {
+
 	if (argc != 2) {
 		printf("[Usage] %s fs_src_file\n", args[0]);
 		return FAIL;
 	}
 
+	char outFileName[1024] = { 0, };
+	sprintf(outFileName, "encrypt__%s", args[1]);
 
-	if (fs_encrypt_aes(args[1], "encryptFile_fs_in.txt") == SUCC) {
+
+	if (fs_encrypt_aes(args[1], outFileName) == SUCC) {
 		/*fs_decrypt_aes("encryptFile_fs_in.txt", "decryptFile_fs_out.txt");*/
-		printf("result:[encryptFile_fs_in.txt]\n");
+		printf("result:[%s]\n", outFileName);
 	}
 
 	return 0;

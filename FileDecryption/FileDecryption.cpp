@@ -126,11 +126,13 @@ int main(int argc, char *args[])
 		printf("[Usage] %s fs_src_file\n", args[0]);
 		return FAIL;
 	}
+	char outFileName[1024] = { 0, };
+	sprintf(outFileName, "decrypt__%s", args[1]);
 
 
-	if (fs_decrypt_aes(args[1], "decryptFile_fs_in.txt") == SUCC) {
+	if (fs_decrypt_aes(args[1], outFileName) == SUCC) {
 		/*fs_decrypt_aes("encryptFile_fs_in.txt", "decryptFile_fs_out.txt");*/
-		printf("result:[decryptFile_fs_in.txt]\n");
+		printf("result:[%s]\n", outFileName);
 	}
 
 	return 0;
