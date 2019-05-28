@@ -42,7 +42,10 @@ void sha256_hash_string(unsigned char hash[SHA256_DIGEST_LENGTH], char *outputBu
 void main(int argc, char *argv[]) {
 
 	char calc_hash[65];
-	char * path = "Project1.exe";
+	if (argc != 2) {
+		printf("need : <getHashFileName> \n");
+	}
+	char * path = argv[1];
 	int result;
 	result = calc_sha256(path, calc_hash);
 	printf("%s\n", calc_hash);
